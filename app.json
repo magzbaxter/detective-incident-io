@@ -1,0 +1,31 @@
+{
+  "name": "detective-incident-io",
+  "description": "A multi-player detective game for incident post-mortems",
+  "repository": "https://github.com/your-username/detective-incident-io",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "next.js", "incident", "postmortem", "collaboration"],
+  "image": "heroku/nodejs",
+  "env": {
+    "NODE_ENV": {
+      "description": "Environment setting",
+      "value": "production"
+    },
+    "INCIDENT_IO_API_KEY": {
+      "description": "Your incident.io API key (optional)",
+      "required": false
+    },
+    "OPENAI_API_KEY": {
+      "description": "Your OpenAI API key for enhanced AI analysis (optional)",
+      "required": false
+    },
+    "WEBHOOK_SECRET": {
+      "description": "Secret for incident.io webhook verification (optional)",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

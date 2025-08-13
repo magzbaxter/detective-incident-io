@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  --detective-cream: #F5F5DC;
+  --detective-brown: #8B4513;
+  --detective-gold: #FFD700;
+  --detective-dark: #2F1B14;
+  --detective-red: #B22222;
+}
+
+body {
+  font-family: 'Crimson Text', Georgia, serif;
+  background-color: var(--detective-cream);
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(139,69,19,0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.detective-paper {
+  background: linear-gradient(135deg, #F5F5DC 0%, #F0E68C 100%);
+  box-shadow: 
+    0 2px 4px rgba(47,27,20,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.evidence-card {
+  background: #FFFACD;
+  border: 2px solid #DDD;
+  box-shadow: 
+    0 4px 8px rgba(0,0,0,0.1),
+    0 0 0 1px rgba(139,69,19,0.1);
+  transform: rotate(-1deg);
+  transition: all 0.3s ease;
+}
+
+.evidence-card:hover {
+  transform: rotate(0deg) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.evidence-card:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.cork-board {
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(139,69,19,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139,69,19,0.1) 0%, transparent 50%),
+    #D2B48C;
+  background-size: 50px 50px, 75px 75px, 100% 100%;
+}
+
+.typewriter {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.5px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
