@@ -33,7 +33,7 @@ A multi-player detective game prototype for incident post-mortems that transform
 - **AI Analysis**: Generate evidence categorization and theory validation
 - **PDF Export**: Professional post-mortem documents ready for stakeholder review
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/YOUR_USERNAME/detective-incident-io)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/magzbaxter/detective-incident-io)
 
 ## 🚀 Quick Start
 
